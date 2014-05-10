@@ -56,7 +56,7 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
     /***
     Comment Update
     ***/
-    frequency = 5000;
+    frequency = 1000;
     interval = 0;
 
     startUpdate = function(){
