@@ -1,7 +1,30 @@
 <div ng-controller="mainController">
 	<div class="container" ng-init="init()">
 		<div class="mysore">
-			Hello, World
+			<form>
+				<div class="form-container">
+					<div class="comment-field" contenteditable="true">
+					Say Something!
+					</div>
+					<div class="submit-field ">
+						<button type="button" class="btn btn-default move-right">
+							Post Comment
+						</button>
+					</div>
+				</div>
+			</form>
+			<div class="comments">
+				<ul>
+					<li class="comment" ng-repeat="comment in comments">
+						<div class="name">
+							{{comment.name}}
+						</div>
+						<p>
+							{{comment.comment}}
+						</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

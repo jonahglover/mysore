@@ -1,7 +1,90 @@
-.container .mysore{
+body {
+  background-color: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.container .mysore {
   width: 100%;
-  height: 80px;
+  height: auto;
   margin-top: 10px;
-  border-top:2px solid #e5e8e9;
-  border-bottom:2px solid #e5e8e9;
+  padding-top:15px;
+  padding-top: 15px;
+  border-top: 2px solid #e5e8e9;
+  border-bottom: 2px solid #e5e8e9;
+}
+
+.container .mysore .form-container{
+	border: 2px solid #ccd3d7; 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.container .mysore .form-container .comment-field {
+	color: #3f4549;
+	cursor: text;
+	resize: none;
+	border: 0;
+	display: block;
+	padding: 6px 10px 8px;
+	margin: 0;
+	width: 100%;
+	min-height: 44px;
+	height: auto;
+	line-height: 1.4;
+	font-size: 14px;
+}
+
+.container .mysore .form-container .submit-field {
+	background-color: #f6f8f9;
+	height: 36px;
+	border-top: 2px solid #ccd3d7;
+}
+
+.container .mysore .form-container .submit-field .submit-button {
+	height: 36px;
+	color: #FFFFFF;
+	background-color: #737e85;
+	font-size: 12px;
+	padding: 12px 14px;
+	font-weight: 700;
+}
+
+.container .mysore .comment {
+	padding-top: 15px;
+}
+.container .mysore .comments .comment {
+  color: #000000;
+}
+.container p {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.move-right{
+    display: block;
+    float: right;
+}
+
+.btn {
+	height: 36px;
+	border:0;
+	margin:0;
+	background-color: #737e85;
+	color: #FFFFFF;
+}
+
+.btn:hover {
+	color: #FFFFFF;
+	background-color: #5d6a71;
+}
+
+.btn:active {
+	color: #FFFFFF;
+	background-color: #5d6a71;
 }

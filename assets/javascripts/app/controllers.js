@@ -20,6 +20,7 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
         .receive(palace_data)
         .success(function(data){
              $scope.comments = data;
+            console.log($scope.comments);
         })
     }
 
