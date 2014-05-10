@@ -3,11 +3,12 @@
 		<div class="mysore">
 			<form>
 				<div class="form-container">
-					<div class="comment-field" contenteditable="true">
-					Say Something!
-					</div>
+					<textarea class="comment-field" ng-model="comment">
+						Say Something!
+					</textarea>
 					<div class="submit-field ">
-						<button type="button" class="btn btn-default move-right">
+						<img ng-show="isUploading" class="spinner" src="assets/images/spinner.gif" />
+						<button type="submit" ng-click="submitComment()" class="btn move-right">
 							Post Comment
 						</button>
 					</div>

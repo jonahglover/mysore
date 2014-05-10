@@ -33,11 +33,12 @@ body {
 	height: auto;
 	line-height: 1.4;
 	font-size: 14px;
+	overflow: hidden;
 }
 
 .container .mysore .form-container .submit-field {
 	background-color: #f6f8f9;
-	height: 36px;
+	height: 38px;
 	border-top: 2px solid #ccd3d7;
 }
 
@@ -61,30 +62,41 @@ body {
   padding: 0;
 }
 
-:focus {
-  outline-color: transparent;
-  outline-style: none;
-}
-
 .move-right{
     display: block;
     float: right;
 }
 
-.btn {
+.container .mysore .form-container .submit-field .spinner {
+	padding-left: 10px;
+	padding-top:10px;
+}
+
+.container .mysore .form-container .submit-field .btn {
 	height: 36px;
-	border:0;
 	margin:0;
 	background-color: #737e85;
 	color: #FFFFFF;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border:0;
 }
 
-.btn:hover {
+.container .mysore .form-container .submit-field .btn:hover {
 	color: #FFFFFF;
 	background-color: #5d6a71;
 }
 
-.btn:active {
+.container .mysore .form-container .submit-field .btn:active {
 	color: #FFFFFF;
 	background-color: #5d6a71;
 }
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+
+button:focus {outline:0;}
