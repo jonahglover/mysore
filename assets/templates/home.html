@@ -3,10 +3,10 @@
 		<div class="mysore">
 			<form>
 				<div class="form-container">
-					<textarea class="comment-field" ng-model="comment">
+					<textarea class="comment-field" ng-model="comment" ng-focus="displayContactFields()">
 						Say Something!
 					</textarea>
-					<div class="submit-field ">
+					<div class="submit-field">
 						<img ng-show="isUploading" class="spinner" src="assets/images/spinner.gif" />
 						<button type="submit" ng-click="submitComment()" class="btn move-right">
 							Post Comment
@@ -17,9 +17,6 @@
 			<div class="comments">
 				<ul>
 					<li class="comment" ng-repeat="comment in comments">
-						<div class="name">
-							{{comment.name}}
-						</div>
 						<p>
 							{{comment.comment}}
 						</p>

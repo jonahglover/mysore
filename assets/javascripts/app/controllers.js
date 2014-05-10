@@ -4,6 +4,7 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
         $scope.comments = [];
         loadComments();
         $scope.comment = "Say Something!";
+        $scope.displayFields = false;
     }
 
     $scope.submitComment = function(){
@@ -23,6 +24,10 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
             $scope.isUploading = false;
             loadComments();
         });
+    }
+
+    $scope.displayContactFields = function(){
+        $scope.displayFields = true;
     }
 
     loadComments = function(){

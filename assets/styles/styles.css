@@ -42,6 +42,12 @@ body {
 	border-top: 2px solid #ccd3d7;
 }
 
+.container .mysore .form-container .contact-fields {
+	background-color: #f6f8f9;
+	height: 38px;
+	border-top: 2px solid #ccd3d7;
+}
+
 .container .mysore .form-container .submit-field .submit-button {
 	height: 36px;
 	color: #FFFFFF;
