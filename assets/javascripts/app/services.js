@@ -52,8 +52,5 @@ app.service('PALACE', ['$http', function($http) {
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
       });
     }
-<<<<<<< HEAD
 }]);
-=======
-}]);
->>>>>>> 4c3fa85201aabc6612d82853b63de51a985a8415
+
