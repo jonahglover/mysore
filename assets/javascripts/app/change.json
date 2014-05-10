@@ -1,0 +1,9 @@
+{
+	"type"		:"update",
+	"action"	:"change",
+	"subdomain"	:"your-project-subdomain",
+	"api"		:"you-api-name",
+	"key"		:"your-api-key",
+	"where"		:{"param1":"value1","param2":"value2"},
+	"change"	:{"param1":"new_value"}
+}

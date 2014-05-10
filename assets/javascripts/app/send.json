@@ -1,0 +1,7 @@
+{
+	"type"		:"send"
+	"subdomain"	:"your-project-subdomain",
+	"api"		:"you-api-name",
+	"key"		:"your-api-key",
+	"data"		:[{"param1":"value1","param2":"value2"},{"param1":"value3","param2":"value4"}]
+}

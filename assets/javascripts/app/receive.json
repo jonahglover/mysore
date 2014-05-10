@@ -1,0 +1,7 @@
+{
+	"type"		:"receive"
+	"subdomain"	:"your-project-subdomain",
+	"api"		:"you-api-name",
+	"key"		:"your-api-key",
+	"where"		:{"key1":"value1","key2":"value2"}
+}
