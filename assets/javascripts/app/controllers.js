@@ -5,6 +5,7 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
         loadComments();
         $scope.comment = "Say Something!";
         $scope.displayFields = false;
+        startUpdate();
     }
 
     $scope.submitComment = function(){
@@ -51,6 +52,17 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
             return ((x > y) ? -1 : ((x < y) ? 1 : 0));
         });
     }
+
+    /***
+    Comment Update
+    ***/
+    frequency = 5000;
+    interval = 0;
+
+    startUpdate = function(){
+        commentInterval = setInterval( "loadComments()", frequency ); 
+    }
+
 
 }]);
 
