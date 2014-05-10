@@ -8,19 +8,20 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
 
     $scope.submitComment = function(){
         $scope.isUploading = true;
-        console.log($scope.comment);
+        stamp = new Date().getTime();
         palace_data = {
             "type"      :"send",
             "subdomain" :"demos",
             "api"       :"mysore",
             "key"       :"mysore",
-            "data"      :[{"name":"Test Name","email":"jdeglover@aol.com","comment":"Hey Dude! Cool Site!"}]
+            "data"      :[{"name":"Test Name","email":"jdeglover@aol.com","comment": $scope.comment,"timestamp":stamp}]
         };
 
         PALACE
         .send(palace_data)
         .success(function(data){
             $scope.isUploading = false;
+            loadComments();
         });
     }
 
@@ -34,9 +35,16 @@ app.controller('mainController', ['$scope', 'PALACE', function($scope, PALACE) {
         PALACE
         .receive(palace_data)
         .success(function(data){
-             $scope.comments = data;
-            console.log($scope.comments);
+            sortByKeyDesc(data,"timestamp");
+            $scope.comments = data;
         })
+    }
+
+    sortByKeyDesc = function(array, key) {
+        return array.sort(function(a, b) {
+            var x = a[key]; var y = b[key];
+            return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+        });
     }
 
 }]);
